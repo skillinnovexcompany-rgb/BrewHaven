@@ -1,0 +1,1 @@
+mongodb+srv://skillinnovexcompany:pNhAgafvgkb36P2K@cluster0.pie4x6e.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0

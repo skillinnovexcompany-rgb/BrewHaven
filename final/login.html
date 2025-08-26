@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brew Heaven - Login & Register</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <main class="container">
+    <!-- Logo & Heading -->
+    <img src="https://storage.googleapis.com/a1aa/image/4c7d09c6-7976-4bad-f98b-381092a9f34e.jpg" alt="Coffee Logo" class="logo-img">
+    <h1 class="logo-title">Brew Heaven</h1>
+    <p class="subtitle">Welcome! Please choose an option to continue:</p>
+
+    <!-- Action Buttons -->
+    <a id="show-login" class="btn login-btn">
+      <i class="fas fa-sign-in-alt"></i> Log In
+    </a>
+    <a id="show-register" class="btn register-btn">
+      <i class="fas fa-user-plus"></i> Register
+    </a>
+
+    <!-- Login Form -->
+    <form id="login-form" class="form hidden" method="POST">
+      <h2 class="form-title">Log In</h2>
+      <label>Email Address</label>
+      <input id="login-email" name="email" type="email" placeholder="you@example.com" required>
+
+      <label>Password</label>
+      <input id="login-password" name="password" type="password" placeholder="********" required>
+
+      <button type="submit" class="btn submit-btn">Log In</button>
+      <p class="form-footer">
+        Don't have an account?
+        <button id="to-register" type="button" class="link-btn">Register here</button>
+      </p>
+    </form>
+
+    <!-- Register Form -->
+    <form id="register-form" class="form hidden" method="POST">
+      <h2 class="form-title">Register</h2>
+      <label>Full Name</label>
+      <input id="register-name" name="name" type="text" placeholder="John Doe" required>
+
+      <label>Email Address</label>
+      <input id="register-email" name="email" type="email" placeholder="you@example.com" required>
+
+      <label>Password</label>
+      <input id="register-password" name="password" type="password" placeholder="********" required>
+
+      <label>Confirm Password</label>
+      <input id="register-password-confirm" name="password_confirm" type="password" placeholder="********" required>
+
+      <button type="submit" class="btn submit-btn">Register</button>
+      <p class="form-footer">
+        Already have an account?
+        <button id="to-login" type="button" class="link-btn">Log in here</button>
+      </p>
+    </form>
+  </main>
+
+  <!-- External JS -->
+  <script src="login.js"></script>
+</body>
+</html>

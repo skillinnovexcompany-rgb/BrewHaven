@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>Brew Haven - Premium Coffee Shop</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="cafe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="#home" class="logo">
+      <img src="https://storage.googleapis.com/a1aa/image/a1b7cd1c-7fe4-404b-82d6-100c4295dc37.jpg" alt="Brew Haven logo">
+      <span>Brew Haven</span>
+    </a>
+    
+    <button id="mobileToggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    
+    <nav id="navLinks">
+  <a href="/cafe">Home</a>
+      <a href="#products">Menu</a>
+      <a href="#about">About</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    
+    <div class="header-icons">
+      <div id="cartIcon">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cartCount">0</span>
+      </div>
+      <button id="signUpBtn" >
+      <a href="/order">  <i class="fa-solid fa-bag-shopping"></i></a>
+      </button>
+      <button id="signOutBtn">
+        
+          <a href="/logout"><i class="fas fa-sign-out-alt"></i></a>
+      </button>
+    </div>
+    
+    <nav id="mobileMenu">
+  <a href="/cafe">Home</a>
+      <a href="#products">Menu</a>
+      <a href="#about">About</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <img src="https://storage.googleapis.com/a1aa/image/d8cd1822-b430-47d6-ad04-431fdb8f2b84.jpg" alt="Coffee shop interior">
+    <div class="hero-content">
+      <h1>Discover the Perfect Brew</h1>
+      <p>Enjoy expertly brewed coffee made with the finest beans from around the world—crafted fresh, just for you.</p>
+      <a href="#products" class="cta-button">Explore Our Coffee</a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <h2>Our Premium Coffee Selection</h2>
+    
+    <div class="product-grid">
+      <article class="product-card">
+        <div class="image-container">
+        <img class="product-image" src="americano.png" alt="Americano coffee">
+        </div>
+        <div class="product-info">
+          <h3>Americano</h3>
+          <p class="price">₹80</p>
+          <p class="description">Caffè americano, also known as americano or American, is an espresso shot with hot water at a 1:3 to 1:4 ratio.</p>
+          <button class="add-to-cart" data-product="Americano" data-price="80">Add to Cart</button>
+        </div>
+      </article>
+      
+      <article class="product-card">
+        <div class="image-container">
+        <img class="product-image" src="cappuccino.png" alt="Cappuccino coffee">
+        </div>
+        <div class="product-info">
+          <h3>Cappuccino</h3>
+          <p class="price">₹150</p>
+          <p class="description">Cappuccino is an espresso-based coffee drink traditionally prepared with steamed milk, including a layer of milk foam.</p>
+          <button class="add-to-cart" data-product="Cappuccino" data-price="150">Add to Cart</button>
+        </div>
+      </article>
+      
+      <article class="product-card">
+        <div class="image-container">
+        <img class="product-image" src="espresso1.png" alt="Espresso coffee">
+        </div>
+        <div class="product-info">
+          <h3>Espresso</h3>
+          <p class="price">₹120</p>
+          <p class="description">Espresso tastes stronger and much more intense than regular drip or filter coffee due to its concentrated nature.</p>
+          <button class="add-to-cart" data-product="Espresso" data-price="120">Add to Cart</button>
+        </div>
+      </article>
+      
+      <article class="product-card">
+        <div class="image-container">
+        <img class="product-image" src="mocha.png" alt="Mocha coffee">
+        </div>
+        <div class="product-info">
+          <h3>Mocha</h3>
+          <p class="price">₹170</p>
+          <p class="description">A caffè mocha, also called mocaccino, is a chocolate-flavoured variant of caffè latte commonly served warm or hot.</p>
+          <button class="add-to-cart" data-product="Mocha" data-price="170">Add to Cart</button>
+        </div>
+      </article>
+      
+      <article class="product-card">
+        <div class="image-container">
+        <img class="product-image" src="iced_coffee.png" alt="Iced coffee">
+        </div>
+        <div class="product-info">
+          <h3>Iced coffee</h3>
+          <p class="price">₹130</p>
+          <p class="description">Iced coffee is a coffee beverage served cold. It may be prepared either by brewing coffee normally.</p>
+          <button class="add-to-cart" data-product="Iced coffee" data-price="130">Add to Cart</button>
+        </div>
+      </article>
+      
+      <article class="product-card">
+        <div class="image-container">
+        <img class="product-image" src="frappe1.png" alt="Frappe coffee">
+        </div>
+        <div class="product-info">
+          <h3>Frappe</h3>
+          <p class="price">₹250</p>
+          <p class="description">The Frappe is a glorious iced coffee drink with whipped cream and flavoured syrups.</p>
+          <button class="add-to-cart" data-product="Frappe" data-price="250">Add to Cart</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>Our Story</h2>
+    
+    <div class="about-content">
+      <img src="https://storage.googleapis.com/a1aa/image/3fd19cc7-87b6-4798-61da-92d77383cfe2.jpg" alt="Coffee roastery">
+      <div class="about-text">
+        <h3>Brewing Excellence Since 2010</h3>
+        <p>At Brew Haven, we've been serving exceptional coffee with heart and purpose for over a decade. Our baristas craft every cup with care, using ethically sourced beans from sustainable farms around the globe.</p>
+        <p>We're passionate about quality, community, and the simple joy of a well-made coffee. Whether you're here for your morning espresso or a relaxed afternoon with friends, every visit is an experience in flavor, comfort, and connection.</p>
+        <p>Come visit us at our café and taste the difference that passion and craftsmanship bring to every sip.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="blog">
+    <h2>Coffee Chronicles</h2>
+    
+    <div class="blog-grid">
+      <article class="blog-card">
+        <div class= "blog-image-container"> 
+        <img class="blog-img" src="https://storage.googleapis.com/a1aa/image/62f167be-1cbb-44c3-ecb5-60501c079235.jpg" alt="Coffee brewing methods">
+        </div>
+        <div  class="blog-info">
+          <time datetime="2023-12-15">December 15, 2024</time>
+          <h3>The Art of Coffee Brewing: Methods Compared</h3>
+          <p>Explore different brewing techniques and discover which method suits your taste preferences best.</p>
+          <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+      
+      <article class="blog-card">
+        <div class= "blog-image-container"> 
+        <img class="blog-img" src="https://storage.googleapis.com/a1aa/image/3345815f-d51f-4652-3c7a-158803ea2a18.jpg" alt="Sustainable coffee farming">
+        </div>
+        <div class="blog-info">
+          <time datetime="2023-11-28">November 28, 2024</time>
+          <h3>Sustainable Coffee: Brewed with Care</h3>
+          <p>Discover how our café partners with farmers who follow eco-friendly practices and fair trade principles.</p>
+          <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+      
+      <article class="blog-card">
+        <div class= "blog-image-container"> 
+        <img class="blog-img" src="https://storage.googleapis.com/a1aa/image/aac71f05-8f55-4a75-d377-109bba39dc3b.jpg" alt="Coffee tasting session">
+        </div>
+        <div class="blog-info">
+          <time datetime="2023-10-12">October 12, 2024</time>
+          <h3>Understanding Coffee Flavor Profiles</h3>
+          <p>A guide to identifying and appreciating the complex flavors and aromas in specialty coffee.</p>
+          <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Brew Haven</h3>
+        <p>Serving handcrafted coffee with a passion for quality, sustainability, and the perfect sip every time.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+       <a href="/cafe">Home</a>
+        <a href="#products">Menu</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <address>
+          <p>123 Coffee Street</p>
+          <p>Brew City, BC 12345</p>
+          <p>Phone: +91 12345 67890</p>
+          <p>Email: brewheaven@gmail.com</p>
+        </address>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 Brew Haven Coffee Shop. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Cart Modal -->
+  <div id="cartModal">
+    <header>
+      <h2>Your Cart</h2>
+      <button id="closeCartBtn">&times;</button>
+    </header>
+    
+    <section>
+      <div id="cartItemsContainer"></div>
+      <p id="emptyCartMessage">Your cart is empty.</p>
+    </section>
+    
+    <footer>
+      <div>
+        Total: ₹<span id="cartTotal">0.00</span>
+      </div>
+      <button id="checkoutBtn">Checkout</button>
+    </footer>
+  </div>
+
+
+
+
+
+<div id="upi-modal" class="upi-modal">
+    <div class="upi-content">
+        <h3>Select your UPI app</h3>
+
+        <div class="upi-options">
+            <div class="upi-option">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyVO9LUWF81Ov6LZR50eDNu5rNFCpkn0LwYQ&s" alt="GPay">
+                <span>Google Pay</span>
+            </div>
+            <div class="upi-option">
+                <img src="https://play-lh.googleusercontent.com/6iyA2zVz5PyyMjK5SIxdUhrb7oh9cYVXJ93q6DZkmx07Er1o90PXYeo6mzL4VC2Gj9s" alt="PhonePe">
+                <span>PhonePe</span>
+            </div>
+            <div class="upi-option">
+                <img src="https://www.dhyeyaias.com/storage/media/BHIM-UPI.jpg" alt="BHIM UPI">
+                <span>BHIM UPI</span>
+            </div>
+        </div>
+
+        <button class="pay-btn" onclick="paynow()">Pay Now</button>
+        <button class="close-btn" onclick="Cod()">Cash On Delevery</button>
+    </div>
+</div>
+
+
+
+
+
+
+  <script src="cafe.js"></script>
+</body>
+</html>

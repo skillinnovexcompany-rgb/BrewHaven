@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #fef9c3, #fef3c7, #fde68a);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Container */
+.container {
+  background-color: #fff;
+  width: 100%;
+  max-width: 420px;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Logo */
+.logo-img {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+
+.logo-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  color: #92400e;
+  margin: 0.5rem 0 1rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #78350f;
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.login-btn {
+  background-color: #ca8a04;
+  color: white;
+}
+
+.login-btn:hover {
+  background-color: #a16207;
+}
+
+.register-btn {
+  background-color: #facc15;
+  color: #422006;
+}
+
+.register-btn:hover {
+  background-color: #eab308;
+}
+
+/* Forms */
+.form {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.form-title {
+  font-size: 1.6rem;
+  color: #92400e;
+  margin-bottom: 1rem;
+}
+
+/* Inputs */
+input {
+  padding: 0.7rem;
+  border: 1px solid #fcd34d;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #fbbf24;
+  box-shadow: 0 0 4px rgba(251, 191, 36, 0.6);
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #ca8a04;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.submit-btn:hover {
+  background-color: #a16207;
+}
+
+/* Footer */
+.form-footer {
+  margin-top: 0.5rem;
+  color: #78350f;
+  font-size: 0.9rem;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #92400e;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Hide Forms */
+.hidden {
+  display: none;
+}
